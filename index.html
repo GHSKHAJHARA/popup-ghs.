@@ -1,0 +1,55 @@
+
+     <!DOCTYPE html>
+<html>
+<head>
+  <title>G.H.S. Khajhara - Admission Open</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .popup img {
+      max-width: 95%;
+      max-height: 95%;
+      border-radius: 12px;
+      box-shadow: 0 0 15px white;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 30px;
+      color: white;
+      background: red;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup" id="popup">
+    <div class="close-btn" onclick="document.getElementById('popup').style.display='none'">&times;</div>
+    <img src="https://i.postimg.cc/t4GWpbZN/20250407-215833-0000.png" alt="Admission Poster">
+  </div>
+</body>
+</html>
